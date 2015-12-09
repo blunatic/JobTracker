@@ -1,0 +1,43 @@
+<div class="wrapper-home">
+  <form name="jobForm">
+    <h1 class="u-full-width main-heading">Job Tracker</h1>
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <label for="jobTitleInput">Job Title</label>
+          <input type="text" class="u-full-width" ng-model="job.title" placeholder="Title" id="jobTitleInput"></input>
+        </div>
+        <div class="six columns">
+          <label for="jobCompanyInput">Company Name</label>
+          <input type="text" class="u-full-width" ng-model="job.company" placeholder="Market Inc." id="jobCompanyInput"></input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="jobLinkInput">Job Posting URL</label>
+          <input class="u-full-width" type="text" ng-model="job.link" placeholder="URL" id="jobDateInput"></input>
+        </div>
+      </div>
+      <label for="jobMessageInput">Notes</label>
+      <textarea class="u-full-width" ng-model="job.note" placeholder="Hi Dave..." id="jobMessageInput"></textarea>
+      <div class="row">
+        <div class="offset-by-two eight columns">
+          <label for="jobDateInput">Date Applied</label>
+          <input class="u-full-width" type="date" ng-model="job.date" id="jobDateInput"></input>
+        </div>
+      </div>
+      <div class="row submit-btns">
+        <div class="six columns">
+          <input class="button-primary button-green" type="button" ng-click="reset()" value="clear input"></input>
+        </div>
+        <div class="six columns">
+          <input class="button-primary button-green" type="button" ng-click="update(job)" value="submit input"></input>
+        </div>
+      </div>
+      <div class="row view-all-btn">
+        <a href="#/jobs"><input class="button u-full-width" type="button" value="view all jobs"></input></a>
+      </div>
+    </div>
+  </form>
+  <div class="status" ng-show="displayStatus"></div>
+</div>

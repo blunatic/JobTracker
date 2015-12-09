@@ -1,0 +1,19 @@
+  {
+  "manifest_version": 2,
+
+  "name": "Job Tracker",
+  "description": "This extension allows you to keep track of what jobs you've applied to while on a job hunt.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/icon-4.png",
+    "default_popup": "main.html",
+    "default_title": "Job Tracker"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "https://ajax.googleapis.com/"
+  ]
+}

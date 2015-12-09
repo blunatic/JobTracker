@@ -1,0 +1,83 @@
+/*
+* Style.css
+*/
+
+a{
+	color: #2ECC71;
+}
+
+.wrapper-home{
+    width: 600px;
+    height: 550px;
+}
+
+.wrapper-jobs{
+	width: 800px;
+}
+
+.container-jobs{
+	width: 90%;
+}
+
+.main-heading{
+	text-align: center;
+}
+
+.button-green{
+	background-color: #2ECC71 !important;
+	border-color: #2ECC71 !important;
+}
+
+.button-green:focus, .button-green:hover{
+	background-color: #2ECC71 !important;
+	border-color: #2ECC71 !important;
+}
+
+.submit-btns{
+	margin-top: 25px;
+	text-align: center;
+}
+
+.view-all-btn{
+	margin-top: 50px;
+}
+
+.back-link{
+	text-decoration: none;
+}
+
+.jobs-table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.jobs-table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-date{
+	width: 15%;
+}
+
+.row-title{
+	width: 35%;
+}
+
+.row-company{
+	width: 25%;
+}
+
+.row-notes{
+	width: 15%;
+}
+
+.row-link{
+	width: 5%;
+}
+
+.row-remove{
+	width: 5%;
+}

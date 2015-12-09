@@ -1,0 +1,37 @@
+<div class="wrapper-jobs">
+    <div class="container container-jobs" ng-controller="JobsController" ng-init="load()">
+        <div class="row">
+            <div class="two columns">
+                <a class="back-link" href="#/"><h1><</h1></a>
+            </div>
+            <div class="eight columns">
+                <h1 class="main-heading">Jobs Applied To</h1>
+            </div>
+            <div class="two columns">
+            </div>
+        </div>
+        <table class="jobs-table u-full-width">
+            <thead>
+                <tr>
+                    <th class="row-1 row-date">Date Applied</th>
+                    <th class="row-2 row-title">Job Title</th>
+                    <th class="row-3 row-company">Company</th>
+                    <th class="row-4 row-notes">Notes</th>
+                    <th class="row-5 row-link">Link</th>
+                    <th class="row-6 row-remove"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="job in jobs track by $index">
+                    <td>{{job.date}}</td>
+                    <td>{{job.title}}</td>
+                    <td>{{job.company}}</td>
+                    <td>{{job.note}}</td>
+                    <td><a ng-href="{{job.link|urlFilter}}" target="__blank"><i class="fa fa-external-link"></i>
+                    </a></td>
+                    <td><input type="button" ng-click="removeJob(job.title, job.company)"/>X</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
